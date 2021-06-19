@@ -1,0 +1,273 @@
+@font-face {
+  	font-family: googSansBld;
+  	src: url(../fonts/GoogleSans-Bold.ttf);
+}
+
+@font-face {
+  	font-family: prodSansMed;
+  	src: url(../fonts/ProductSans-Medium.ttf);
+}
+
+@font-face {
+  	font-family: prodSansBlk;
+  	src: url(../fonts/ProductSans-Black.ttf);
+}
+
+.fontGoogSansBld {
+	font-family: googSansBld;
+}
+
+.fontProdSansMed {
+	font-family: prodSansMed;
+}
+
+.fontProdSansBlk {
+	font-family: prodSansBlk;
+}
+
+.animate300ms {
+	transition: all 300ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate500ms {
+	transition: all 500ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate700ms {
+	transition: all 700ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate1000ms {
+	transition: all 1000ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate1500ms {
+	transition: all 1500ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate2000ms {
+	transition: all 2000ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate3000ms {
+    transition: all 3000ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animate4000ms {
+    transition: all 4000ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.animateBounce300ms {
+	transition: all 300ms cubic-bezier(.5, 1.42, .81, -.22);
+}
+
+.delay100ms {
+	transition-delay: 100ms;
+}
+
+.delay300ms {
+	transition-delay: 300ms;
+}
+
+.delay500ms {
+	transition-delay: 500ms;
+}
+
+.delay700ms {
+	transition-delay: 700ms;
+}
+
+.delay1000ms {
+	transition-delay: 1000ms;
+}
+
+.delay1500ms {
+	transition-delay: 1500ms;
+}
+
+.delay2000ms {
+	transition-delay: 2000ms;
+}
+
+.delay2500ms {
+	transition-delay: 2500ms;
+}
+
+.delay3000ms {
+	transition-delay: 3000ms;
+}
+
+.hide {
+	/*display: none;*/
+	opacity: 0;
+	transition: all 0s 0s cubic-bezier(.13, 0, .11, 1);
+}
+
+.show {
+	/*display: block;*/
+	opacity: 1;
+	transition: all 500ms 500ms cubic-bezier(.13, 0, .11, 1);
+}
+
+.absCenter {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.horizCenter {
+	display: flex;
+  	/*justify-content: center;*/
+	flex-direction: column
+}
+
+.vertCenter {
+	display: flex;
+  	align-items: center;
+}
+
+.caratXBounce {
+	animation: xBounce 2000ms 5 cubic-bezier(.13, 0, .11, 1);
+}
+
+.caratYBounce {
+	animation: yBounce 2000ms 5 cubic-bezier(.13, 0, .11, 1);
+}
+
+.caratZBounce {
+	animation: zBounce 1000ms 5 cubic-bezier(.13, 0, .11, 1);
+}
+
+.boxShadowFade:before,
+.boxShadowFade:after {
+	animation: boxShadowFade 2000ms 5 cubic-bezier(.13, 0, .11, 1) forwards;
+}
+
+.animateHotspot {
+	animation: opacityBlink 2000ms 5 cubic-bezier(.13, 0, .11, 1) forwards;
+}
+
+@keyframes xBounce {
+  	0%, 100% {
+  	  transform: translateX(0);
+  	}
+  	50% {
+  	  transform: translateX(5px);
+  	}	
+}
+
+@keyframes yBounce {
+  	0%, 100% {
+  	  transform: translateY(0);
+  	}
+  	50% {
+  	  transform: translateY(5px);
+  	}	
+}
+
+@keyframes zBounce {
+  	0%, 100% {
+  	  transform: translateZ(0);
+  	}
+  	50% {
+  	  transform: translateZ(50px);
+  	}	
+}
+
+@keyframes boxShadowFade {
+  	0%, 100% {
+  	  /*opacity: 0;*/
+  	  box-shadow: 0 0 10px 5px rgba(146,206,243,0);
+  	}
+  	50% {
+  	  /*opacity: 100;*/
+  	  box-shadow: 0 0 10px 5px rgba(146,206,243,.5);
+  	}	
+}
+
+@keyframes animateBounce {
+  	0%, 100% {
+  	  transform: scale(1);
+  	}
+  	50% {
+  	  transform: scale(1.1);
+  	}	
+}
+
+@keyframes animateBounceUp {
+  	0% {
+  	  transform: scale(1);
+  	}
+  	50% {
+  	  transform: scale(1.1);
+  	}	
+	100% {
+  	  transform: scale(1);
+	}
+}
+
+@keyframes animateScaleUp {
+  	0% {
+  	  transform: scale(1);
+  	}
+  	50% {
+  	  transform: scale(1.6);
+  	}	
+	100% {
+  	  transform: scale(1.4);
+	}
+}
+
+@keyframes opacityBlink {
+  	0%, 100% {
+  	  opacity: 0;
+  	  /*box-shadow: 0 0 10px 5px rgba(146,206,243,0);*/
+  	}
+  	50% {
+  	  opacity: 100;
+  	  /*box-shadow: 0 0 10px 5px rgba(146,206,243,.5);*/
+  	}	
+}
+
+/*#content {
+	margin-top: -4px;
+	align-self: center;
+}*/
+
+.buttonCTA {
+    position: absolute;
+    color: #FFFFFF;
+    font-family: prodSansBlk;
+    /*font-size: 16px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-radius: 8px;*/
+    border: none;
+    /*background-color: #056DAE;*/
+    /*opacity: 0;*/
+}
+
+/*.textCTA {
+    position: absolute;
+    color: #056DAE;
+    font-family: interstateBold;
+    font-size: 16px;
+}*/
+
+/*.learnMoreCarat {
+    width: 7px;
+}
+
+.color056DAE {
+    color: #056DAE;
+}
+
+.color333 {
+    color: #333;
+}
+
+.colorFFF {
+    color: #FFF;
+}
+*/
